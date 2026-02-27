@@ -37,3 +37,9 @@ wandb/
 # OS
 .DS_Store
 Thumbs.db
+
+# But allow key sample artifacts
+!results/metrics.json
+!results/forecasts.csv
+!results/forecast_visualization.png
+!logs/training.log
