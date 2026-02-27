@@ -1,0 +1,40 @@
+# Git
+.git
+.gitignore
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# Jupyter
+notebooks/
+
+# Local data (Docker pipeline will download fresh)
+data/
+
+# Logs and results (will be generated inside container)
+logs/
+results/
+
+# W&B local runs
+wandb/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Pytest cache
+.pytest_cache/
+
+# Model checkpoints (generated)
+*.pt
+
+# Large files
+*.zip
