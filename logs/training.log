@@ -1,0 +1,451 @@
+2026-02-25 19:42:35,113 - INFO - Starting preprocessing pipeline...
+2026-02-25 19:42:35,113 - INFO - Downloading dataset...
+2026-02-25 19:46:20,334 - INFO - Starting preprocessing pipeline...
+2026-02-25 19:46:20,335 - INFO - Downloading dataset...
+2026-02-25 19:47:42,009 - INFO - Dataset downloaded successfully.
+2026-02-25 19:47:42,014 - INFO - Extracting dataset...
+2026-02-25 19:47:42,950 - INFO - Extraction complete.
+2026-02-25 19:47:42,951 - INFO - Loading dataset...
+2026-02-25 19:47:45,661 - INFO - Parsing datetime...
+2026-02-25 19:47:54,684 - INFO - Converting numeric columns...
+2026-02-25 19:47:54,755 - INFO - Handling missing values (ffill \u2192 bfill)...
+2026-02-25 19:47:54,968 - INFO - Resampling to hourly frequency...
+2026-02-25 19:47:55,258 - INFO - Final dataset shape after resampling: (34589, 7)
+2026-02-25 19:47:55,664 - INFO - Processed data saved to data/processed/processed.csv
+2026-02-25 19:47:55,664 - INFO - Preprocessing completed successfully.
+2026-02-25 22:13:55,482 - INFO - Starting feature engineering pipeline...
+2026-02-25 22:13:55,633 - INFO - Adding calendar features...
+2026-02-25 22:13:55,648 - INFO - Adding lag features: [1, 24, 168]
+2026-02-25 22:13:55,652 - INFO - Adding rolling features: [24]
+2026-02-25 22:13:55,659 - INFO - Dropping rows with NaNs from lag/rolling operations...
+2026-02-25 22:13:55,671 - INFO - Final feature dataset shape: (34421, 16)
+2026-02-25 22:13:56,621 - INFO - Feature data saved to data/processed/features.csv
+2026-02-25 22:13:56,622 - INFO - Feature engineering completed successfully.
+2026-02-25 22:30:41,098 - INFO - Starting training pipeline...
+2026-02-25 22:30:45,368 - INFO - Starting walk-forward fold 1
+2026-02-25 22:30:45,368 - INFO - Training fold 1
+2026-02-25 22:36:19,366 - INFO - Starting training pipeline...
+2026-02-25 22:36:22,173 - INFO - Starting walk-forward fold 1
+2026-02-25 22:36:22,173 - INFO - Training fold 1
+2026-02-25 22:42:21,870 - INFO - Evaluating fold 1
+2026-02-25 22:42:22,009 - INFO - Starting walk-forward fold 2
+2026-02-25 22:42:22,010 - INFO - Training fold 2
+2026-02-25 22:53:35,191 - INFO - Evaluating fold 2
+2026-02-25 22:53:35,280 - INFO - Starting walk-forward fold 3
+2026-02-25 22:53:35,280 - INFO - Training fold 3
+2026-02-25 23:09:57,187 - INFO - Evaluating fold 3
+2026-02-25 23:09:57,336 - INFO - Starting walk-forward fold 1
+2026-02-25 23:09:57,337 - INFO - Training fold 1
+2026-02-25 23:19:14,810 - INFO - Evaluating fold 1
+2026-02-25 23:43:02,014 - INFO - Starting training pipeline...
+2026-02-25 23:43:03,325 - INFO - Starting walk-forward fold 1
+2026-02-25 23:43:03,325 - INFO - Training fold 1
+2026-02-25 23:44:10,857 - INFO - Evaluating fold 1
+2026-02-25 23:44:10,888 - INFO - Starting walk-forward fold 2
+2026-02-25 23:44:10,888 - INFO - Training fold 2
+2026-02-25 23:48:24,162 - INFO - Evaluating fold 2
+2026-02-25 23:48:24,189 - INFO - Starting walk-forward fold 3
+2026-02-25 23:48:24,189 - INFO - Training fold 3
+2026-02-25 23:51:23,967 - INFO - Evaluating fold 3
+2026-02-25 23:51:23,998 - INFO - Starting walk-forward fold 1
+2026-02-25 23:51:23,998 - INFO - Training fold 1
+2026-02-25 23:51:24,004 - WARNING - Skipping fold 1 due to insufficient sequence length.
+2026-02-25 23:51:24,004 - INFO - Starting walk-forward fold 2
+2026-02-25 23:51:24,004 - INFO - Training fold 2
+2026-02-25 23:51:24,012 - WARNING - Skipping fold 2 due to insufficient sequence length.
+2026-02-25 23:51:24,012 - INFO - Starting walk-forward fold 3
+2026-02-25 23:51:24,012 - INFO - Training fold 3
+2026-02-25 23:51:24,022 - WARNING - Skipping fold 3 due to insufficient sequence length.
+2026-02-25 23:51:24,024 - INFO - Starting walk-forward fold 1
+2026-02-25 23:51:24,024 - INFO - Training fold 1
+2026-02-25 23:52:26,079 - INFO - Evaluating fold 1
+2026-02-25 23:52:26,106 - INFO - Starting walk-forward fold 2
+2026-02-25 23:52:26,106 - INFO - Training fold 2
+2026-02-25 23:54:35,538 - INFO - Evaluating fold 2
+2026-02-25 23:54:35,566 - INFO - Starting walk-forward fold 3
+2026-02-25 23:54:35,567 - INFO - Training fold 3
+2026-02-25 23:57:42,943 - INFO - Evaluating fold 3
+2026-02-25 23:57:42,967 - INFO - Starting walk-forward fold 1
+2026-02-25 23:57:42,967 - INFO - Training fold 1
+2026-02-25 23:57:42,973 - WARNING - Skipping fold 1 due to insufficient sequence length.
+2026-02-25 23:57:42,973 - INFO - Starting walk-forward fold 2
+2026-02-25 23:57:42,973 - INFO - Training fold 2
+2026-02-25 23:57:42,981 - WARNING - Skipping fold 2 due to insufficient sequence length.
+2026-02-25 23:57:42,981 - INFO - Starting walk-forward fold 3
+2026-02-25 23:57:42,981 - INFO - Training fold 3
+2026-02-25 23:57:42,991 - WARNING - Skipping fold 3 due to insufficient sequence length.
+2026-02-25 23:57:42,993 - INFO - Starting walk-forward fold 1
+2026-02-25 23:57:42,993 - INFO - Training fold 1
+2026-02-26 00:00:43,753 - INFO - Evaluating fold 1
+2026-02-26 00:00:43,811 - INFO - Starting walk-forward fold 2
+2026-02-26 00:00:43,811 - INFO - Training fold 2
+2026-02-26 00:06:05,838 - INFO - Evaluating fold 2
+2026-02-26 00:06:05,880 - INFO - Starting walk-forward fold 3
+2026-02-26 00:06:05,880 - INFO - Training fold 3
+2026-02-26 00:11:49,611 - INFO - Evaluating fold 3
+2026-02-26 00:11:49,643 - INFO - Starting walk-forward fold 1
+2026-02-26 00:11:49,643 - INFO - Training fold 1
+2026-02-26 00:13:58,058 - INFO - Evaluating fold 1
+2026-02-26 00:13:58,094 - INFO - Starting walk-forward fold 2
+2026-02-26 00:13:58,094 - INFO - Training fold 2
+2026-02-26 00:18:17,229 - INFO - Evaluating fold 2
+2026-02-26 00:18:17,264 - INFO - Starting walk-forward fold 3
+2026-02-26 00:18:17,265 - INFO - Training fold 3
+2026-02-26 00:24:48,128 - INFO - Evaluating fold 3
+2026-02-26 00:24:48,160 - INFO - Starting walk-forward fold 1
+2026-02-26 00:24:48,160 - INFO - Training fold 1
+2026-02-26 00:24:48,165 - WARNING - Skipping fold 1 due to insufficient sequence length.
+2026-02-26 00:24:48,165 - INFO - Starting walk-forward fold 2
+2026-02-26 00:24:48,165 - INFO - Training fold 2
+2026-02-26 00:24:48,172 - WARNING - Skipping fold 2 due to insufficient sequence length.
+2026-02-26 00:24:48,172 - INFO - Starting walk-forward fold 3
+2026-02-26 00:24:48,172 - INFO - Training fold 3
+2026-02-26 00:24:48,183 - WARNING - Skipping fold 3 due to insufficient sequence length.
+2026-02-26 00:24:48,184 - INFO - Starting walk-forward fold 1
+2026-02-26 00:24:48,184 - INFO - Training fold 1
+2026-02-26 00:26:53,587 - INFO - Evaluating fold 1
+2026-02-26 00:26:53,623 - INFO - Starting walk-forward fold 2
+2026-02-26 00:26:53,623 - INFO - Training fold 2
+2026-02-26 00:31:08,636 - INFO - Evaluating fold 2
+2026-02-26 00:31:08,672 - INFO - Starting walk-forward fold 3
+2026-02-26 00:31:08,673 - INFO - Training fold 3
+2026-02-26 00:37:30,182 - INFO - Evaluating fold 3
+2026-02-26 00:37:30,228 - INFO - Starting walk-forward fold 1
+2026-02-26 00:37:30,228 - INFO - Training fold 1
+2026-02-26 00:38:01,371 - INFO - Evaluating fold 1
+2026-02-26 00:38:01,385 - INFO - Starting walk-forward fold 2
+2026-02-26 00:38:01,385 - INFO - Training fold 2
+2026-02-26 00:38:59,733 - INFO - Evaluating fold 2
+2026-02-26 00:38:59,746 - INFO - Starting walk-forward fold 3
+2026-02-26 00:38:59,747 - INFO - Training fold 3
+2026-02-26 00:40:28,405 - INFO - Evaluating fold 3
+2026-02-26 00:40:28,420 - INFO - Starting walk-forward fold 1
+2026-02-26 00:40:28,420 - INFO - Training fold 1
+2026-02-26 00:41:31,095 - INFO - Evaluating fold 1
+2026-02-26 00:41:31,118 - INFO - Starting walk-forward fold 2
+2026-02-26 00:41:31,118 - INFO - Training fold 2
+2026-02-26 00:43:38,313 - INFO - Evaluating fold 2
+2026-02-26 00:43:38,332 - INFO - Starting walk-forward fold 3
+2026-02-26 00:43:38,332 - INFO - Training fold 3
+2026-02-26 01:05:30,653 - INFO - Evaluating fold 3
+2026-02-26 01:05:30,685 - INFO - Best params: {'window_size': 48, 'hidden_size': 128, 'dropout': 0.3, 'learning_rate': 0.000757633616610308, 'batch_size': 32}
+2026-02-26 01:12:04,262 - INFO - Best model saved to results/best_lstm.pt
+2026-02-26 01:12:05,750 - INFO - Training pipeline completed successfully.
+2026-02-26 13:10:28,102 - INFO - Starting training pipeline...
+2026-02-26 13:10:29,220 - INFO - Starting walk-forward fold 1
+2026-02-26 13:10:29,220 - INFO - Training fold 1
+2026-02-26 13:13:32,756 - INFO - Evaluating fold 1
+2026-02-26 13:13:32,809 - INFO - Starting walk-forward fold 2
+2026-02-26 13:13:32,809 - INFO - Training fold 2
+2026-02-26 13:26:39,249 - INFO - Evaluating fold 2
+2026-02-26 13:26:39,335 - INFO - Starting walk-forward fold 3
+2026-02-26 13:26:39,335 - INFO - Training fold 3
+2026-02-26 13:58:40,785 - INFO - Evaluating fold 3
+2026-02-26 13:58:40,877 - INFO - Starting walk-forward fold 1
+2026-02-26 13:58:40,877 - INFO - Training fold 1
+2026-02-26 14:02:09,951 - INFO - Evaluating fold 1
+2026-02-26 14:02:10,044 - INFO - Starting walk-forward fold 2
+2026-02-26 14:02:10,044 - INFO - Training fold 2
+2026-02-26 14:08:33,902 - INFO - Evaluating fold 2
+2026-02-26 14:08:34,003 - INFO - Starting walk-forward fold 3
+2026-02-26 14:08:34,003 - INFO - Training fold 3
+2026-02-26 14:18:02,588 - INFO - Evaluating fold 3
+2026-02-26 14:18:02,665 - INFO - Starting walk-forward fold 1
+2026-02-26 14:18:02,665 - INFO - Training fold 1
+2026-02-26 14:18:02,678 - WARNING - Skipping fold 1 due to insufficient sequence length.
+2026-02-26 14:18:02,679 - INFO - Starting walk-forward fold 2
+2026-02-26 14:18:02,679 - INFO - Training fold 2
+2026-02-26 14:18:02,692 - WARNING - Skipping fold 2 due to insufficient sequence length.
+2026-02-26 14:18:02,692 - INFO - Starting walk-forward fold 3
+2026-02-26 14:18:02,692 - INFO - Training fold 3
+2026-02-26 14:18:02,710 - WARNING - Skipping fold 3 due to insufficient sequence length.
+2026-02-26 14:18:02,713 - INFO - Starting walk-forward fold 1
+2026-02-26 14:18:02,714 - INFO - Training fold 1
+2026-02-26 14:18:02,724 - WARNING - Skipping fold 1 due to insufficient sequence length.
+2026-02-26 14:18:02,724 - INFO - Starting walk-forward fold 2
+2026-02-26 14:18:02,724 - INFO - Training fold 2
+2026-02-26 14:18:02,738 - WARNING - Skipping fold 2 due to insufficient sequence length.
+2026-02-26 14:18:02,738 - INFO - Starting walk-forward fold 3
+2026-02-26 14:18:02,738 - INFO - Training fold 3
+2026-02-26 14:18:02,756 - WARNING - Skipping fold 3 due to insufficient sequence length.
+2026-02-26 14:18:02,759 - INFO - Starting walk-forward fold 1
+2026-02-26 14:18:02,759 - INFO - Training fold 1
+2026-02-26 14:20:18,060 - INFO - Evaluating fold 1
+2026-02-26 14:20:18,130 - INFO - Starting walk-forward fold 2
+2026-02-26 14:20:18,130 - INFO - Training fold 2
+2026-02-26 14:27:07,059 - INFO - Evaluating fold 2
+2026-02-26 14:27:07,173 - INFO - Starting walk-forward fold 3
+2026-02-26 14:27:07,173 - INFO - Training fold 3
+2026-02-26 14:36:37,569 - INFO - Evaluating fold 3
+2026-02-26 14:36:37,647 - INFO - Starting walk-forward fold 1
+2026-02-26 14:36:37,647 - INFO - Training fold 1
+2026-02-26 14:36:37,660 - WARNING - Skipping fold 1 due to insufficient sequence length.
+2026-02-26 14:36:37,660 - INFO - Starting walk-forward fold 2
+2026-02-26 14:36:37,660 - INFO - Training fold 2
+2026-02-26 14:36:37,681 - WARNING - Skipping fold 2 due to insufficient sequence length.
+2026-02-26 14:36:37,681 - INFO - Starting walk-forward fold 3
+2026-02-26 14:36:37,681 - INFO - Training fold 3
+2026-02-26 14:36:37,707 - WARNING - Skipping fold 3 due to insufficient sequence length.
+2026-02-26 14:36:37,710 - INFO - Starting walk-forward fold 1
+2026-02-26 14:36:37,710 - INFO - Training fold 1
+2026-02-26 14:41:12,406 - INFO - Evaluating fold 1
+2026-02-26 14:41:12,487 - INFO - Starting walk-forward fold 2
+2026-02-26 14:41:12,487 - INFO - Training fold 2
+2026-02-26 14:45:30,588 - INFO - Evaluating fold 2
+2026-02-26 14:45:30,615 - INFO - Starting walk-forward fold 3
+2026-02-26 14:45:30,615 - INFO - Training fold 3
+2026-02-26 14:48:47,548 - INFO - Evaluating fold 3
+2026-02-26 14:48:47,571 - INFO - Starting walk-forward fold 1
+2026-02-26 14:48:47,571 - INFO - Training fold 1
+2026-02-26 14:51:02,863 - INFO - Evaluating fold 1
+2026-02-26 14:51:02,906 - INFO - Starting walk-forward fold 2
+2026-02-26 14:51:02,906 - INFO - Training fold 2
+2026-02-26 14:55:26,705 - INFO - Evaluating fold 2
+2026-02-26 14:55:26,743 - INFO - Starting walk-forward fold 3
+2026-02-26 14:55:26,743 - INFO - Training fold 3
+2026-02-26 15:02:04,932 - INFO - Evaluating fold 3
+2026-02-26 15:02:04,974 - INFO - Starting walk-forward fold 1
+2026-02-26 15:02:04,974 - INFO - Training fold 1
+2026-02-26 15:05:07,120 - INFO - Evaluating fold 1
+2026-02-26 15:05:07,151 - INFO - Starting walk-forward fold 2
+2026-02-26 15:05:07,151 - INFO - Training fold 2
+2026-02-26 15:11:11,395 - INFO - Evaluating fold 2
+2026-02-26 15:11:11,428 - INFO - Starting walk-forward fold 3
+2026-02-26 15:11:11,428 - INFO - Training fold 3
+2026-02-26 15:20:22,396 - INFO - Evaluating fold 3
+2026-02-26 15:20:22,433 - INFO - Starting walk-forward fold 1
+2026-02-26 15:20:22,433 - INFO - Training fold 1
+2026-02-26 15:22:31,986 - INFO - Evaluating fold 1
+2026-02-26 15:22:32,033 - INFO - Starting walk-forward fold 2
+2026-02-26 15:22:32,033 - INFO - Training fold 2
+2026-02-26 15:26:39,455 - INFO - Evaluating fold 2
+2026-02-26 15:26:39,492 - INFO - Starting walk-forward fold 3
+2026-02-26 15:26:39,492 - INFO - Training fold 3
+2026-02-26 15:37:12,720 - INFO - Evaluating fold 3
+2026-02-26 15:37:12,756 - INFO - Best params: {'window_size': 72, 'hidden_size': 128, 'dropout': 0.5, 'learning_rate': 0.001922551177685067, 'batch_size': 32}
+2026-02-26 15:47:04,093 - INFO - Best model saved to results/best_lstm.pt
+2026-02-26 15:47:07,173 - INFO - Training pipeline completed successfully.
+2026-02-27 03:54:42,055 - INFO - Starting training pipeline...
+2026-02-27 03:54:43,328 - INFO - Starting walk-forward fold 1
+2026-02-27 03:54:43,329 - INFO - Training fold 1
+2026-02-27 03:54:43,333 - WARNING - Skipping fold 1 due to insufficient sequence length.
+2026-02-27 03:54:43,334 - INFO - Starting walk-forward fold 2
+2026-02-27 03:54:43,334 - INFO - Training fold 2
+2026-02-27 03:54:43,342 - WARNING - Skipping fold 2 due to insufficient sequence length.
+2026-02-27 03:54:43,343 - INFO - Starting walk-forward fold 3
+2026-02-27 03:54:43,343 - INFO - Training fold 3
+2026-02-27 03:54:43,357 - WARNING - Skipping fold 3 due to insufficient sequence length.
+2026-02-27 03:54:43,359 - INFO - Starting walk-forward fold 1
+2026-02-27 03:54:43,359 - INFO - Training fold 1
+2026-02-27 03:54:43,364 - WARNING - Skipping fold 1 due to insufficient sequence length.
+2026-02-27 03:54:43,364 - INFO - Starting walk-forward fold 2
+2026-02-27 03:54:43,365 - INFO - Training fold 2
+2026-02-27 03:54:43,371 - WARNING - Skipping fold 2 due to insufficient sequence length.
+2026-02-27 03:54:43,372 - INFO - Starting walk-forward fold 3
+2026-02-27 03:54:43,373 - INFO - Training fold 3
+2026-02-27 03:54:43,383 - WARNING - Skipping fold 3 due to insufficient sequence length.
+2026-02-27 03:54:43,386 - INFO - Starting walk-forward fold 1
+2026-02-27 03:54:43,388 - INFO - Training fold 1
+2026-02-27 03:54:43,392 - WARNING - Skipping fold 1 due to insufficient sequence length.
+2026-02-27 03:54:43,393 - INFO - Starting walk-forward fold 2
+2026-02-27 03:54:43,393 - INFO - Training fold 2
+2026-02-27 03:54:43,400 - WARNING - Skipping fold 2 due to insufficient sequence length.
+2026-02-27 03:54:43,400 - INFO - Starting walk-forward fold 3
+2026-02-27 03:54:43,401 - INFO - Training fold 3
+2026-02-27 03:54:43,411 - WARNING - Skipping fold 3 due to insufficient sequence length.
+2026-02-27 03:54:43,414 - INFO - Starting walk-forward fold 1
+2026-02-27 03:54:43,415 - INFO - Training fold 1
+2026-02-27 03:55:03,659 - INFO - Evaluating fold 1
+2026-02-27 03:55:03,677 - INFO - Starting walk-forward fold 2
+2026-02-27 03:55:03,678 - INFO - Training fold 2
+2026-02-27 03:55:49,232 - INFO - Evaluating fold 2
+2026-02-27 03:55:49,242 - INFO - Starting walk-forward fold 3
+2026-02-27 03:55:49,243 - INFO - Training fold 3
+2026-02-27 05:46:32,069 - INFO - Starting training pipeline...
+2026-02-27 05:46:33,385 - INFO - Starting walk-forward fold 1
+2026-02-27 05:46:33,385 - INFO - Training fold 1
+2026-02-27 05:47:32,545 - INFO - Evaluating fold 1
+2026-02-27 05:47:32,574 - INFO - Starting walk-forward fold 2
+2026-02-27 05:47:32,575 - INFO - Training fold 2
+2026-02-27 05:49:38,741 - INFO - Evaluating fold 2
+2026-02-27 05:49:38,758 - INFO - Starting walk-forward fold 3
+2026-02-27 05:49:38,759 - INFO - Training fold 3
+2026-02-27 05:53:01,995 - INFO - Evaluating fold 3
+2026-02-27 05:53:02,017 - INFO - Starting walk-forward fold 1
+2026-02-27 05:53:02,017 - INFO - Training fold 1
+2026-02-27 05:53:59,191 - INFO - Evaluating fold 1
+2026-02-27 05:53:59,211 - INFO - Starting walk-forward fold 2
+2026-02-27 05:53:59,212 - INFO - Training fold 2
+2026-02-27 05:56:11,403 - INFO - Evaluating fold 2
+2026-02-27 05:56:11,425 - INFO - Starting walk-forward fold 3
+2026-02-27 05:56:11,425 - INFO - Training fold 3
+2026-02-27 05:59:42,259 - INFO - Evaluating fold 3
+2026-02-27 05:59:42,278 - INFO - Starting walk-forward fold 1
+2026-02-27 05:59:42,279 - INFO - Training fold 1
+2026-02-27 06:00:02,661 - INFO - Evaluating fold 1
+2026-02-27 06:00:02,670 - INFO - Starting walk-forward fold 2
+2026-02-27 06:00:02,671 - INFO - Training fold 2
+2026-02-27 06:00:42,176 - INFO - Evaluating fold 2
+2026-02-27 06:00:42,183 - INFO - Starting walk-forward fold 3
+2026-02-27 06:00:42,184 - INFO - Training fold 3
+2026-02-27 06:01:41,036 - INFO - Evaluating fold 3
+2026-02-27 06:01:41,045 - INFO - Starting walk-forward fold 1
+2026-02-27 06:01:41,046 - INFO - Training fold 1
+2026-02-27 06:02:04,236 - INFO - Evaluating fold 1
+2026-02-27 06:02:04,248 - INFO - Starting walk-forward fold 2
+2026-02-27 06:02:04,249 - INFO - Training fold 2
+2026-02-27 06:02:54,731 - INFO - Evaluating fold 2
+2026-02-27 06:02:54,740 - INFO - Starting walk-forward fold 3
+2026-02-27 06:02:54,741 - INFO - Training fold 3
+2026-02-27 06:04:15,562 - INFO - Evaluating fold 3
+2026-02-27 06:04:15,574 - INFO - Starting walk-forward fold 1
+2026-02-27 06:04:15,575 - INFO - Training fold 1
+2026-02-27 06:04:39,581 - INFO - Evaluating fold 1
+2026-02-27 06:04:39,595 - INFO - Starting walk-forward fold 2
+2026-02-27 06:04:39,595 - INFO - Training fold 2
+2026-02-27 06:05:26,490 - INFO - Evaluating fold 2
+2026-02-27 06:05:26,500 - INFO - Starting walk-forward fold 3
+2026-02-27 06:05:26,500 - INFO - Training fold 3
+2026-02-27 06:06:43,621 - INFO - Evaluating fold 3
+2026-02-27 06:06:43,635 - INFO - Starting walk-forward fold 1
+2026-02-27 06:06:43,635 - INFO - Training fold 1
+2026-02-27 06:07:20,324 - INFO - Evaluating fold 1
+2026-02-27 06:07:20,337 - INFO - Starting walk-forward fold 2
+2026-02-27 06:07:20,338 - INFO - Training fold 2
+2026-02-27 06:08:30,479 - INFO - Evaluating fold 2
+2026-02-27 06:08:30,491 - INFO - Starting walk-forward fold 3
+2026-02-27 06:08:30,492 - INFO - Training fold 3
+2026-02-27 06:10:18,926 - INFO - Evaluating fold 3
+2026-02-27 06:10:18,937 - INFO - Starting walk-forward fold 1
+2026-02-27 06:10:18,938 - INFO - Training fold 1
+2026-02-27 06:11:51,232 - INFO - Evaluating fold 1
+2026-02-27 06:11:51,255 - INFO - Starting walk-forward fold 2
+2026-02-27 06:11:51,255 - INFO - Training fold 2
+2026-02-27 06:14:55,908 - INFO - Evaluating fold 2
+2026-02-27 06:14:56,278 - INFO - Starting walk-forward fold 3
+2026-02-27 06:14:56,278 - INFO - Training fold 3
+2026-02-27 06:19:46,315 - INFO - Evaluating fold 3
+2026-02-27 06:19:46,339 - INFO - Starting walk-forward fold 1
+2026-02-27 06:19:46,339 - INFO - Training fold 1
+2026-02-27 06:21:26,402 - INFO - Evaluating fold 1
+2026-02-27 06:21:26,425 - INFO - Starting walk-forward fold 2
+2026-02-27 06:21:26,426 - INFO - Training fold 2
+2026-02-27 06:24:34,804 - INFO - Evaluating fold 2
+2026-02-27 06:24:34,828 - INFO - Starting walk-forward fold 3
+2026-02-27 06:24:34,829 - INFO - Training fold 3
+2026-02-27 06:29:32,251 - INFO - Evaluating fold 3
+2026-02-27 06:29:32,275 - INFO - Starting walk-forward fold 1
+2026-02-27 06:29:32,275 - INFO - Training fold 1
+2026-02-27 06:29:32,281 - WARNING - Skipping fold 1 due to insufficient sequence length.
+2026-02-27 06:29:32,281 - INFO - Starting walk-forward fold 2
+2026-02-27 06:29:32,282 - INFO - Training fold 2
+2026-02-27 06:29:32,287 - WARNING - Skipping fold 2 due to insufficient sequence length.
+2026-02-27 06:29:32,288 - INFO - Starting walk-forward fold 3
+2026-02-27 06:29:32,288 - INFO - Training fold 3
+2026-02-27 06:29:32,294 - WARNING - Skipping fold 3 due to insufficient sequence length.
+2026-02-27 06:29:32,296 - INFO - Starting walk-forward fold 1
+2026-02-27 06:29:32,297 - INFO - Training fold 1
+2026-02-27 06:29:58,832 - INFO - Evaluating fold 1
+2026-02-27 06:29:58,847 - INFO - Starting walk-forward fold 2
+2026-02-27 06:29:58,847 - INFO - Training fold 2
+2026-02-27 06:30:50,581 - INFO - Evaluating fold 2
+2026-02-27 06:30:50,594 - INFO - Starting walk-forward fold 3
+2026-02-27 06:30:50,597 - INFO - Training fold 3
+2026-02-27 06:32:10,716 - INFO - Evaluating fold 3
+2026-02-27 06:32:10,730 - INFO - Best params: {'window_size': 48, 'hidden_size': 128, 'dropout': 0.1, 'learning_rate': 0.0005565869534590102, 'batch_size': 32}
+2026-02-27 06:34:55,321 - INFO - Best model saved to results/best_lstm.pt
+2026-02-27 06:34:56,679 - INFO - Training pipeline completed successfully.
+2026-02-27 07:32:32,321 - INFO - Starting training pipeline...
+2026-02-27 07:32:33,409 - INFO - Starting walk-forward fold 1
+2026-02-27 07:32:33,410 - INFO - Training fold 1
+2026-02-27 07:32:53,181 - INFO - Evaluating fold 1
+2026-02-27 07:32:53,199 - INFO - Starting walk-forward fold 2
+2026-02-27 07:32:53,199 - INFO - Training fold 2
+2026-02-27 07:33:33,068 - INFO - Evaluating fold 2
+2026-02-27 07:33:33,075 - INFO - Starting walk-forward fold 3
+2026-02-27 07:33:33,076 - INFO - Training fold 3
+2026-02-27 07:34:31,333 - INFO - Evaluating fold 3
+2026-02-27 07:34:31,343 - INFO - Starting walk-forward fold 1
+2026-02-27 07:34:31,343 - INFO - Training fold 1
+2026-02-27 07:34:44,709 - INFO - Evaluating fold 1
+2026-02-27 07:34:44,721 - INFO - Starting walk-forward fold 2
+2026-02-27 07:34:44,722 - INFO - Training fold 2
+2026-02-27 07:35:12,667 - INFO - Evaluating fold 2
+2026-02-27 07:35:12,674 - INFO - Starting walk-forward fold 3
+2026-02-27 07:35:12,674 - INFO - Training fold 3
+2026-02-27 07:35:53,787 - INFO - Evaluating fold 3
+2026-02-27 07:35:53,796 - INFO - Starting walk-forward fold 1
+2026-02-27 07:35:53,797 - INFO - Training fold 1
+2026-02-27 07:35:53,801 - WARNING - Skipping fold 1 due to insufficient sequence length.
+2026-02-27 07:35:53,802 - INFO - Starting walk-forward fold 2
+2026-02-27 07:35:53,802 - INFO - Training fold 2
+2026-02-27 07:35:53,807 - WARNING - Skipping fold 2 due to insufficient sequence length.
+2026-02-27 07:35:53,807 - INFO - Starting walk-forward fold 3
+2026-02-27 07:35:53,808 - INFO - Training fold 3
+2026-02-27 07:35:53,819 - WARNING - Skipping fold 3 due to insufficient sequence length.
+2026-02-27 07:35:53,821 - INFO - Starting walk-forward fold 1
+2026-02-27 07:35:53,821 - INFO - Training fold 1
+2026-02-27 07:36:10,308 - INFO - Evaluating fold 1
+2026-02-27 07:36:10,317 - INFO - Starting walk-forward fold 2
+2026-02-27 07:36:10,318 - INFO - Training fold 2
+2026-02-27 07:36:43,562 - INFO - Evaluating fold 2
+2026-02-27 07:36:43,570 - INFO - Starting walk-forward fold 3
+2026-02-27 07:36:43,571 - INFO - Training fold 3
+2026-02-27 07:37:29,476 - INFO - Evaluating fold 3
+2026-02-27 07:37:29,485 - INFO - Starting walk-forward fold 1
+2026-02-27 07:37:29,485 - INFO - Training fold 1
+2026-02-27 07:39:04,673 - INFO - Evaluating fold 1
+2026-02-27 07:39:04,695 - INFO - Starting walk-forward fold 2
+2026-02-27 07:39:04,696 - INFO - Training fold 2
+2026-02-27 07:42:18,906 - INFO - Evaluating fold 2
+2026-02-27 07:42:18,927 - INFO - Starting walk-forward fold 3
+2026-02-27 07:42:18,927 - INFO - Training fold 3
+2026-02-27 07:47:15,932 - INFO - Evaluating fold 3
+2026-02-27 07:47:15,957 - INFO - Starting walk-forward fold 1
+2026-02-27 07:47:15,957 - INFO - Training fold 1
+2026-02-27 07:47:38,255 - INFO - Evaluating fold 1
+2026-02-27 07:47:38,266 - INFO - Starting walk-forward fold 2
+2026-02-27 07:47:38,266 - INFO - Training fold 2
+2026-02-27 07:48:24,755 - INFO - Evaluating fold 2
+2026-02-27 07:48:24,763 - INFO - Starting walk-forward fold 3
+2026-02-27 07:48:24,764 - INFO - Training fold 3
+2026-02-27 07:49:36,102 - INFO - Evaluating fold 3
+2026-02-27 07:49:36,113 - INFO - Starting walk-forward fold 1
+2026-02-27 07:49:36,114 - INFO - Training fold 1
+2026-02-27 07:49:50,589 - INFO - Evaluating fold 1
+2026-02-27 07:49:50,597 - INFO - Starting walk-forward fold 2
+2026-02-27 07:49:50,598 - INFO - Training fold 2
+2026-02-27 07:50:20,307 - INFO - Evaluating fold 2
+2026-02-27 07:50:20,316 - INFO - Starting walk-forward fold 3
+2026-02-27 07:50:20,316 - INFO - Training fold 3
+2026-02-27 07:51:04,450 - INFO - Evaluating fold 3
+2026-02-27 07:51:04,459 - INFO - Starting walk-forward fold 1
+2026-02-27 07:51:04,460 - INFO - Training fold 1
+2026-02-27 07:51:25,896 - INFO - Evaluating fold 1
+2026-02-27 07:51:25,906 - INFO - Starting walk-forward fold 2
+2026-02-27 07:51:25,906 - INFO - Training fold 2
+2026-02-27 07:52:12,974 - INFO - Evaluating fold 2
+2026-02-27 07:52:12,984 - INFO - Starting walk-forward fold 3
+2026-02-27 07:52:12,984 - INFO - Training fold 3
+2026-02-27 07:53:25,293 - INFO - Evaluating fold 3
+2026-02-27 07:53:25,304 - INFO - Starting walk-forward fold 1
+2026-02-27 07:53:25,304 - INFO - Training fold 1
+2026-02-27 07:53:32,113 - INFO - Evaluating fold 1
+2026-02-27 07:53:32,119 - INFO - Starting walk-forward fold 2
+2026-02-27 07:53:32,120 - INFO - Training fold 2
+2026-02-27 07:53:46,647 - INFO - Evaluating fold 2
+2026-02-27 07:53:46,652 - INFO - Starting walk-forward fold 3
+2026-02-27 07:53:46,652 - INFO - Training fold 3
+2026-02-27 07:54:06,441 - INFO - Evaluating fold 3
+2026-02-27 07:54:06,449 - INFO - Starting walk-forward fold 1
+2026-02-27 07:54:06,449 - INFO - Training fold 1
+2026-02-27 07:55:06,522 - INFO - Evaluating fold 1
+2026-02-27 07:55:06,544 - INFO - Starting walk-forward fold 2
+2026-02-27 07:55:06,545 - INFO - Training fold 2
+2026-02-27 07:57:08,134 - INFO - Evaluating fold 2
+2026-02-27 07:57:08,153 - INFO - Starting walk-forward fold 3
+2026-02-27 07:57:08,153 - INFO - Training fold 3
+2026-02-27 08:00:14,996 - INFO - Evaluating fold 3
+2026-02-27 08:00:15,017 - INFO - Best params: {'window_size': 72, 'hidden_size': 128, 'dropout': 0.1, 'learning_rate': 0.00034866458133186366, 'batch_size': 32}
+2026-02-27 08:05:02,786 - INFO - Best model saved to results/best_lstm.pt
+2026-02-27 08:05:04,127 - INFO - Training pipeline completed successfully.
