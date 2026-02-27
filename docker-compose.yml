@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  app:
+    build: .
+    container_name: energy-forecasting-app
+
+    env_file:
+      - .env
+
+    volumes:
+      - ./data:/app/data
+      - ./results:/app/results
+      - ./logs:/app/logs
+
+    command: >
+      python -m src.train --config config/main.yml &&
+      python -m src.evaluate --config config/main.yml
